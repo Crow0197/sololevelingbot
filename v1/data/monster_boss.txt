@@ -1,0 +1,5 @@
+Orco della Montagna;500
+Minotauro Nero;1000
+Re Demone;5000
+Fenice Rossa;10000
+Tiranno del Caos;20000
