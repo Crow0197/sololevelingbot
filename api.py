@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from fastapi.staticfiles import StaticFiles
 from funzioni_solo_leveling import (
     register_user,
     load_users,
@@ -20,6 +21,8 @@ from funzioni_solo_leveling import (
 import re
 
 app = FastAPI(title="Solo Leveling Bot API")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 app.add_middleware(
     CORSMiddleware,

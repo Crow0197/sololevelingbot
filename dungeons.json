@@ -2047,5 +2047,834 @@
         "money": 4938,
         "exp_reward": 931,
         "participants": []
+    },
+    "618bcde1-7545-4716-9b16-37d413d334ce": {
+        "id": "618bcde1-7545-4716-9b16-37d413d334ce",
+        "difficulty": "S",
+        "encounters": [
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Custode della Notte",
+                    "grado": "Comune",
+                    "hp": 1100,
+                    "atk": 350,
+                    "def": 300,
+                    "ctk": 250,
+                    "sup": 500,
+                    "exp": 200,
+                    "talenti": [
+                        {
+                            "nome": "Scudo delle Tenebre",
+                            "type": "def",
+                            "descrizione": "Crea uno scudo oscuro per ridurre i danni subiti.",
+                            "status_applicato": "Protezione Tenebrosa"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Protezione Tenebrosa",
+                            "descrizione": "Riduce i danni subiti di 500 punti per un turno."
+                        }
+                    ],
+                    "drop": [
+                        "Emblema d'Ombra",
+                        "Frammento di Notte"
+                    ],
+                    "storia": "Vigila sulla citt\u00e0 nelle ore pi\u00f9 oscure, proteggendola dai pericoli.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Arcimago del Vuoto",
+                    "grado": "Epico",
+                    "hp": 1800,
+                    "atk": 600,
+                    "def": 500,
+                    "ctk": 300,
+                    "sup": 300,
+                    "exp": 800,
+                    "talenti": [
+                        {
+                            "nome": "Incantesimo del Nulla",
+                            "type": "atk",
+                            "descrizione": "Sfrutta l'energia del vuoto per annullare le difese.",
+                            "status_applicato": "Ferita del Nulla"
+                        },
+                        {
+                            "nome": "Barriera Esistenziale",
+                            "type": "def",
+                            "descrizione": "Forma una barriera che assorbe gli attacchi nemici.",
+                            "status_applicato": "Protezione del Nulla"
+                        },
+                        {
+                            "nome": "Essenza del Vuoto",
+                            "type": "sup",
+                            "descrizione": "Assorbe la forza del nulla per rigenerarsi.",
+                            "status_applicato": "Potenziamento del Vuoto"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Ferita del Nulla",
+                            "descrizione": "Infligge 500 danni extra all'avversario."
+                        },
+                        {
+                            "nome": "Protezione del Nulla",
+                            "descrizione": "Aumenta la difesa di 300 punti per un turno."
+                        },
+                        {
+                            "nome": "Potenziamento del Vuoto",
+                            "descrizione": "Recupera 300 HP e incrementa lievemente l'ATK."
+                        }
+                    ],
+                    "drop": [
+                        "Tomo del Vuoto",
+                        "Sangue dell'Arcimago"
+                    ],
+                    "storia": "Un arcimago che attinge alla forza del nulla per sconfiggere i nemici.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Drago Corrotto",
+                    "grado": "Raro",
+                    "hp": 1500,
+                    "atk": 400,
+                    "def": 400,
+                    "ctk": 300,
+                    "sup": 400,
+                    "exp": 400,
+                    "talenti": [
+                        {
+                            "nome": "Fauci Corrotte",
+                            "type": "atk",
+                            "descrizione": "Morde infondendo veleno nell'avversario.",
+                            "status_applicato": "Sangue Infetto"
+                        },
+                        {
+                            "nome": "Rigenerazione Malefica",
+                            "type": "sup",
+                            "descrizione": "Si rigenera assorbendo energia demoniaca.",
+                            "status_applicato": "Potenziamento Demoniaco"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Protezione Corrotta",
+                            "descrizione": "Aumenta la difesa di 500 punti per un turno."
+                        },
+                        {
+                            "nome": "Sangue Infetto",
+                            "descrizione": "Infligge 500 danni extra all'avversario (veleno)."
+                        }
+                    ],
+                    "drop": [
+                        "Uovo di Drago",
+                        "Scaglia Demoniaca",
+                        "Gemma Oscura"
+                    ],
+                    "storia": "Un drago un tempo nobile, ora corrotto da poteri oscuri.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Custode dei Segreti",
+                    "grado": "Epico",
+                    "hp": 1800,
+                    "atk": 600,
+                    "def": 500,
+                    "ctk": 300,
+                    "sup": 300,
+                    "exp": 800,
+                    "talenti": [
+                        {
+                            "nome": "Sussurri Inquietanti",
+                            "type": "atk",
+                            "descrizione": "Ferisce la mente del nemico con parole oscure.",
+                            "status_applicato": "Ferita Mentale"
+                        },
+                        {
+                            "nome": "Oscuramento Profondo",
+                            "type": "def",
+                            "descrizione": "Avvolge il custode in un'ombra impenetrabile.",
+                            "status_applicato": "Protezione dei Segreti"
+                        },
+                        {
+                            "nome": "Rivelazione Oscura",
+                            "type": "sup",
+                            "descrizione": "Emanando poteri arcani, si rigenera.",
+                            "status_applicato": "Potenziamento dei Segreti"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Ferita Mentale",
+                            "descrizione": "Infligge 500 danni extra all'avversario."
+                        },
+                        {
+                            "nome": "Protezione dei Segreti",
+                            "descrizione": "Aumenta la difesa di 300 punti per un turno."
+                        },
+                        {
+                            "nome": "Potenziamento dei Segreti",
+                            "descrizione": "Recupera 300 HP e incrementa lievemente l'ATK."
+                        }
+                    ],
+                    "drop": [
+                        "Manoscritto Segreto",
+                        "Chiave dell'Ignoto"
+                    ],
+                    "storia": "Custode dei misteri pi\u00f9 antichi, che difende con poteri arcani.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Eternit\u00e0 Incarnata",
+                    "grado": "Leggendario",
+                    "hp": 2000,
+                    "atk": 800,
+                    "def": 500,
+                    "ctk": 300,
+                    "sup": 400,
+                    "exp": 1500,
+                    "talenti": [
+                        {
+                            "nome": "Colpo dell'Eternit\u00e0",
+                            "type": "atk",
+                            "descrizione": "Sfrutta la potenza di un tempo infinito per colpire.",
+                            "status_applicato": "Ferita Eterna"
+                        },
+                        {
+                            "nome": "Scudo dell'Eternit\u00e0",
+                            "type": "def",
+                            "descrizione": "Forma un'armatura impenetrabile di energia senza tempo.",
+                            "status_applicato": "Protezione Eterna"
+                        },
+                        {
+                            "nome": "Rinascita Eterna",
+                            "type": "sup",
+                            "descrizione": "Rigenera i propri HP assorbendo l'energia dell'infinito.",
+                            "status_applicato": "Potenziamento Eterno"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Ferita Eterna",
+                            "descrizione": "Infligge 500 danni extra all'avversario."
+                        },
+                        {
+                            "nome": "Protezione Eterna",
+                            "descrizione": "Aumenta la difesa di 400 punti per un turno."
+                        },
+                        {
+                            "nome": "Potenziamento Eterno",
+                            "descrizione": "Recupera 400 HP e incrementa lievemente l'ATK."
+                        }
+                    ],
+                    "drop": [
+                        "Orologio del Tempo",
+                        "Sigillo Eterno",
+                        "Essenza di Eternit\u00e0"
+                    ],
+                    "storia": "Un'entit\u00e0 che sfida le leggi del tempo e dello spazio, eterna e invincibile.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Ombra Silente",
+                    "grado": "Comune",
+                    "hp": 1200,
+                    "atk": 280,
+                    "def": 310,
+                    "ctk": 210,
+                    "sup": 500,
+                    "exp": 200,
+                    "talenti": [
+                        {
+                            "nome": "Sguardo Mortale",
+                            "type": "atk",
+                            "descrizione": "Un attacco fulmineo che coglie l'avversario alla sprovvista.",
+                            "status_applicato": "Ferita Mortale"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Ferita Mortale",
+                            "descrizione": "Infligge 500 danni extra all'avversario."
+                        }
+                    ],
+                    "drop": [
+                        "Velo di Silenzio",
+                        "Piuma Oscura"
+                    ],
+                    "storia": "Agisce nell'oscurit\u00e0, invisibile agli occhi dei pi\u00f9.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            },
+            {
+                "tipo": "boss",
+                "nemico": {
+                    "nome": "Vigilante delle Ombre",
+                    "grado": "Comune",
+                    "hp": 1250,
+                    "atk": 320,
+                    "def": 280,
+                    "ctk": 230,
+                    "sup": 420,
+                    "exp": 200,
+                    "talenti": [
+                        {
+                            "nome": "Velo Protettivo",
+                            "type": "def",
+                            "descrizione": "Un velo oscuro riduce i danni subiti.",
+                            "status_applicato": "Protezione Veloce"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Potenziamento Furtivo",
+                            "descrizione": "Rigenera 500 HP e incrementa la probabilit\u00e0 di schivata."
+                        }
+                    ],
+                    "drop": [
+                        "Lama d'Ombra",
+                        "Mantello Oscuro"
+                    ],
+                    "storia": "Punisce i malvagi agendo furtivamente nell'oscurit\u00e0.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            }
+        ],
+        "money": 5595,
+        "exp_reward": 4599,
+        "participants": []
+    },
+    "08463276-74ce-4cb3-a4ac-95be44b21295": {
+        "id": "08463276-74ce-4cb3-a4ac-95be44b21295",
+        "difficulty": "A",
+        "encounters": [
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Custode dei Segreti",
+                    "grado": "Epico",
+                    "hp": 1800,
+                    "atk": 600,
+                    "def": 500,
+                    "ctk": 300,
+                    "sup": 300,
+                    "exp": 800,
+                    "talenti": [
+                        {
+                            "nome": "Sussurri Inquietanti",
+                            "type": "atk",
+                            "descrizione": "Ferisce la mente del nemico con parole oscure.",
+                            "status_applicato": "Ferita Mentale"
+                        },
+                        {
+                            "nome": "Oscuramento Profondo",
+                            "type": "def",
+                            "descrizione": "Avvolge il custode in un'ombra impenetrabile.",
+                            "status_applicato": "Protezione dei Segreti"
+                        },
+                        {
+                            "nome": "Rivelazione Oscura",
+                            "type": "sup",
+                            "descrizione": "Emanando poteri arcani, si rigenera.",
+                            "status_applicato": "Potenziamento dei Segreti"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Ferita Mentale",
+                            "descrizione": "Infligge 500 danni extra all'avversario."
+                        },
+                        {
+                            "nome": "Protezione dei Segreti",
+                            "descrizione": "Aumenta la difesa di 300 punti per un turno."
+                        },
+                        {
+                            "nome": "Potenziamento dei Segreti",
+                            "descrizione": "Recupera 300 HP e incrementa lievemente l'ATK."
+                        }
+                    ],
+                    "drop": [
+                        "Manoscritto Segreto",
+                        "Chiave dell'Ignoto"
+                    ],
+                    "storia": "Custode dei misteri pi\u00f9 antichi, che difende con poteri arcani.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Custode della Notte",
+                    "grado": "Comune",
+                    "hp": 1100,
+                    "atk": 350,
+                    "def": 300,
+                    "ctk": 250,
+                    "sup": 500,
+                    "exp": 200,
+                    "talenti": [
+                        {
+                            "nome": "Colpo d'Ombra",
+                            "type": "atk",
+                            "descrizione": "Un attacco rapido che coglie di sorpresa.",
+                            "status_applicato": "Ferita Furtiva"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Protezione Tenebrosa",
+                            "descrizione": "Riduce i danni subiti di 500 punti per un turno."
+                        }
+                    ],
+                    "drop": [
+                        "Emblema d'Ombra",
+                        "Frammento di Notte"
+                    ],
+                    "storia": "Vigila sulla citt\u00e0 nelle ore pi\u00f9 oscure, proteggendola dai pericoli.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Vigilante delle Ombre",
+                    "grado": "Comune",
+                    "hp": 1250,
+                    "atk": 320,
+                    "def": 280,
+                    "ctk": 230,
+                    "sup": 420,
+                    "exp": 200,
+                    "talenti": [
+                        {
+                            "nome": "Lama d'Ombra",
+                            "type": "atk",
+                            "descrizione": "Colpisce con una spada forgiata nelle tenebre.",
+                            "status_applicato": "Ferita Lacerante"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Protezione Veloce",
+                            "descrizione": "Aumenta la difesa di 500 punti per un turno."
+                        }
+                    ],
+                    "drop": [
+                        "Lama d'Ombra",
+                        "Mantello Oscuro"
+                    ],
+                    "storia": "Punisce i malvagi agendo furtivamente nell'oscurit\u00e0.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    }
+                ]
+            },
+            {
+                "tipo": "miniboss",
+                "nemico": {
+                    "nome": "Drago Corrotto",
+                    "grado": "Raro",
+                    "hp": 1500,
+                    "atk": 400,
+                    "def": 400,
+                    "ctk": 300,
+                    "sup": 400,
+                    "exp": 400,
+                    "talenti": [
+                        {
+                            "nome": "Fauci Corrotte",
+                            "type": "atk",
+                            "descrizione": "Morde infondendo veleno nell'avversario.",
+                            "status_applicato": "Sangue Infetto"
+                        },
+                        {
+                            "nome": "Scaglie Demoniache",
+                            "type": "def",
+                            "descrizione": "Le sue scaglie assorbono parte del danno.",
+                            "status_applicato": "Protezione Corrotta"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Potenziamento Demoniaco",
+                            "descrizione": "Recupera 400 HP e incrementa l'ATK."
+                        },
+                        {
+                            "nome": "Protezione Corrotta",
+                            "descrizione": "Aumenta la difesa di 500 punti per un turno."
+                        }
+                    ],
+                    "drop": [
+                        "Uovo di Drago",
+                        "Scaglia Demoniaca",
+                        "Gemma Oscura"
+                    ],
+                    "storia": "Un drago un tempo nobile, ora corrotto da poteri oscuri.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            },
+            {
+                "tipo": "boss",
+                "nemico": {
+                    "nome": "Custode della Notte",
+                    "grado": "Comune",
+                    "hp": 1100,
+                    "atk": 350,
+                    "def": 300,
+                    "ctk": 250,
+                    "sup": 500,
+                    "exp": 200,
+                    "talenti": [
+                        {
+                            "nome": "Rinascita Oscura",
+                            "type": "sup",
+                            "descrizione": "Rigenera i propri HP sfruttando l'energia della notte.",
+                            "status_applicato": "Potenziamento Oscuro"
+                        }
+                    ],
+                    "effetti": [
+                        {
+                            "nome": "Protezione Tenebrosa",
+                            "descrizione": "Riduce i danni subiti di 500 punti per un turno."
+                        }
+                    ],
+                    "drop": [
+                        "Emblema d'Ombra",
+                        "Frammento di Notte"
+                    ],
+                    "storia": "Vigila sulla citt\u00e0 nelle ore pi\u00f9 oscure, proteggendola dai pericoli.",
+                    "avatar_url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/the-statue-of-god-evil-smile-solo-leveling-episode-2.jpg"
+                },
+                "drops": [
+                    {
+                        "name": "Armatura Runica",
+                        "type": "Armatura",
+                        "grade": "B",
+                        "description": "Armatura incisa con rune arcane.",
+                        "effect": "Riduce i danni magici del 15%.",
+                        "ability": "Scudo Arcano"
+                    },
+                    {
+                        "name": "Spada d'Ombra",
+                        "type": "Arma",
+                        "grade": "D",
+                        "description": "Una spada forgiata nelle tenebre.",
+                        "effect": "Aumenta i danni contro i nemici notturni.",
+                        "ability": "Colpo d'Ombra"
+                    },
+                    {
+                        "name": "Talismano della Vita",
+                        "type": "Oggetto Magico",
+                        "grade": "E",
+                        "description": "Un piccolo amuleto che irradia energia vitale.",
+                        "effect": "Rigenera 50 HP ogni turno.",
+                        "ability": "Benedizione Minore"
+                    }
+                ]
+            }
+        ],
+        "money": 3267,
+        "exp_reward": 2164,
+        "participants": []
     }
 }

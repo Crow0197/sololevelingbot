@@ -1,5 +1,7 @@
-
 // URL base per le tue API
+// const API_BASE =
+//   "https://66624fa4-5560-4fef-96c2-224a50172da8-00-inci5z2l9nqr.picard.replit.dev";
+
 const API_BASE = "http://localhost:8000";
 
 // Iniezione di stile dark minimale
@@ -163,7 +165,7 @@ function buildTabs() {
     // Utente NON loggato => 2 tab: Login e Register
     const tabs = [
       { id: "login", label: "Login" },
-      { id: "register", label: "Register" }
+      { id: "register", label: "Register" },
     ];
     let navHTML = "";
     tabs.forEach((t, idx) => {
@@ -172,7 +174,7 @@ function buildTabs() {
     tabNav.innerHTML = navHTML;
 
     let contentHTML = `
-        <div class="sl-tab-content active" id="login">
+        <div class="sl-tab-content active" id="login" style="text-align: left;">
           <p><strong>Login con Username</strong></p>
           <input type="text" id="sl-login-username" class="sl-input" placeholder="Inserisci Username" />
           <button class="sl-btn" id="sl-login-btn">Login</button>
@@ -191,10 +193,14 @@ function buildTabs() {
     tabContainer.innerHTML = contentHTML;
 
     // Switch tab
-    document.querySelectorAll("#sl-tab-nav .sl-tab-btn").forEach(btn => {
+    document.querySelectorAll("#sl-tab-nav .sl-tab-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll("#sl-tab-nav .sl-tab-btn").forEach(b => b.classList.remove("active"));
-        document.querySelectorAll("#sl-tab-container .sl-tab-content").forEach(c => c.classList.remove("active"));
+        document
+          .querySelectorAll("#sl-tab-nav .sl-tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document
+          .querySelectorAll("#sl-tab-container .sl-tab-content")
+          .forEach((c) => c.classList.remove("active"));
         btn.classList.add("active");
         const target = btn.getAttribute("data-tab");
         document.getElementById(target).classList.add("active");
@@ -202,9 +208,12 @@ function buildTabs() {
     });
 
     // Login e Register
-    document.getElementById("sl-login-btn").addEventListener("click", loginByUsername);
-    document.getElementById("sl-reg-btn").addEventListener("click", registerUser);
-
+    document
+      .getElementById("sl-login-btn")
+      .addEventListener("click", loginByUsername);
+    document
+      .getElementById("sl-reg-btn")
+      .addEventListener("click", registerUser);
   } else {
     // Utente loggato => tab comandi
     const tabs = [
@@ -214,7 +223,7 @@ function buildTabs() {
       // { id: "bossbattle", label: "BossBattle" },
       { id: "dungeon", label: "Dungeon" },
       { id: "dungeoncomplete", label: "Complete" },
-      { id: "logout", label: "Logout" }
+      { id: "logout", label: "Logout" },
     ];
     let navHTML = "";
     tabs.forEach((t, idx) => {
@@ -223,7 +232,7 @@ function buildTabs() {
     tabNav.innerHTML = navHTML;
 
     let contentHTML = `
-        <div class="sl-tab-content active" id="profile">
+        <div class="sl-tab-content active" id="profile"  style="text-align: left;">
           <p>Profilo di <strong>${user.username}</strong>:</p>
           <button class="sl-btn" id="sl-profile-btn">Mostra Profilo</button>
           <div id="sl-profile-result" style="margin-top:10px;"></div>
@@ -249,14 +258,14 @@ function buildTabs() {
 
         <div class="sl-tab-content" id="dungeon">
           <p>Genera un dungeon (B, A, S):</p>
-          <input type="text" id="sl-dungeon-diff" class="sl-input" placeholder="B, A, S" />
+          <input type="text" id="sl-dungeon-diff" class="sl-input" placeholder="B, A, S" / style="  width: 98%;">
           <button class="sl-btn" id="sl-dungeon-btn">Crea Dungeon</button>
-          <div id="sl-dungeon-result" style="margin-top:10px;"></div>
+          <div id="sl-dungeon-result" style="margin-top:10px; text-align: left;"></div>
         </div>
 
         <div class="sl-tab-content" id="dungeoncomplete">
           <p>Completa un dungeon (user_id: ${user.user_id}):</p>
-          <input type="text" id="sl-dc-id" class="sl-input" placeholder="Dungeon ID" />
+          <input type="text" id="sl-dc-id" class="sl-input" placeholder="Dungeon ID"  style="width: 98%;"/>
           <div style="margin:5px 0;">
             <label>
               <input type="checkbox" id="sl-dc-success" />
@@ -275,10 +284,14 @@ function buildTabs() {
     tabContainer.innerHTML = contentHTML;
 
     // Tab switching
-    document.querySelectorAll("#sl-tab-nav .sl-tab-btn").forEach(btn => {
+    document.querySelectorAll("#sl-tab-nav .sl-tab-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll("#sl-tab-nav .sl-tab-btn").forEach(b => b.classList.remove("active"));
-        document.querySelectorAll("#sl-tab-container .sl-tab-content").forEach(c => c.classList.remove("active"));
+        document
+          .querySelectorAll("#sl-tab-nav .sl-tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document
+          .querySelectorAll("#sl-tab-container .sl-tab-content")
+          .forEach((c) => c.classList.remove("active"));
         btn.classList.add("active");
         const target = btn.getAttribute("data-tab");
         document.getElementById(target).classList.add("active");
@@ -286,13 +299,25 @@ function buildTabs() {
     });
 
     // Event listener per i comandi
-    document.getElementById("sl-profile-btn").addEventListener("click", showProfile);
-    document.getElementById("sl-fight-btn").addEventListener("click", fightBoss);
+    document
+      .getElementById("sl-profile-btn")
+      .addEventListener("click", showProfile);
+    document
+      .getElementById("sl-fight-btn")
+      .addEventListener("click", fightBoss);
     document.getElementById("sl-rankup-btn").addEventListener("click", rankUp);
-    document.getElementById("sl-bossbattle-btn").addEventListener("click", bossBattle);
-    document.getElementById("sl-dungeon-btn").addEventListener("click", createDungeon);
-    document.getElementById("sl-dc-btn").addEventListener("click", completeDungeon);
-    document.getElementById("sl-logout-btn2").addEventListener("click", logoutUser);
+    document
+      .getElementById("sl-bossbattle-btn")
+      .addEventListener("click", bossBattle);
+    document
+      .getElementById("sl-dungeon-btn")
+      .addEventListener("click", createDungeon);
+    document
+      .getElementById("sl-dc-btn")
+      .addEventListener("click", completeDungeon);
+    document
+      .getElementById("sl-logout-btn2")
+      .addEventListener("click", logoutUser);
   }
 }
 
@@ -320,16 +345,24 @@ async function callAPI(endpoint, method = "GET", body = null) {
  */
 async function loginByUsername() {
   const uname = document.getElementById("sl-login-username").value.trim();
-  if (!uname) { alert("Inserisci un nome utente"); return; }
+  if (!uname) {
+    alert("Inserisci un nome utente");
+    return;
+  }
 
   const check = await callAPI(`/profile/${uname}`, "GET");
   if (check.error) {
-    alert("Utente non trovato o errore. Prova a registrarti nella tab 'Register'.");
+    alert(
+      "Utente non trovato o errore. Prova a registrarti nella tab 'Register'.",
+    );
     return;
   }
   if (check.username && check.user_id) {
     // Salviamo in localStorage
-    localStorage.setItem("slUser", JSON.stringify({ username: check.username, user_id: check.user_id }));
+    localStorage.setItem(
+      "slUser",
+      JSON.stringify({ username: check.username, user_id: check.user_id }),
+    );
     alert("Login riuscito: " + check.username);
     buildTabs();
   }
@@ -341,7 +374,10 @@ async function loginByUsername() {
 async function registerUser() {
   const userId = document.getElementById("sl-reg-userid").value.trim();
   const uname = document.getElementById("sl-reg-username").value.trim();
-  if (!uname) { alert("Inserisci username"); return; }
+  if (!uname) {
+    alert("Inserisci username");
+    return;
+  }
 
   // Se l'utente non inserisce userId, lo generiamo
   const finalId = userId || Date.now().toString();
@@ -353,7 +389,10 @@ async function registerUser() {
   }
   if (resp.message && resp.user_id) {
     alert(resp.message);
-    localStorage.setItem("slUser", JSON.stringify({ username: uname, user_id: resp.user_id }));
+    localStorage.setItem(
+      "slUser",
+      JSON.stringify({ username: uname, user_id: resp.user_id }),
+    );
     buildTabs();
   }
 }
@@ -394,9 +433,6 @@ async function showProfile() {
     resultDiv.innerHTML = `<pre>${JSON.stringify(resp, null, 2)}</pre>`;
   }
 }
-
-
-
 
 /**
  * Fight
@@ -474,9 +510,14 @@ async function bossBattle() {
  */
 async function createDungeon() {
   const user = JSON.parse(localStorage.getItem("slUser"));
-  const diffVal = document.getElementById("sl-dungeon-diff").value.toUpperCase();
+  const diffVal = document
+    .getElementById("sl-dungeon-diff")
+    .value.toUpperCase();
   const resultDiv = document.getElementById("sl-dungeon-result");
-  if (!diffVal) { alert("Inserisci la difficoltà (B, A, S)"); return; }
+  if (!diffVal) {
+    alert("Inserisci la difficoltà (B, A, S)");
+    return;
+  }
 
   resultDiv.innerHTML = "Caricamento...";
   const body = { difficulty: diffVal };
@@ -510,7 +551,7 @@ async function completeDungeon() {
   const body = {
     dungeon_id: dungeonId,
     outcome: outcome,
-    user_id: Number(user.user_id)
+    user_id: Number(user.user_id),
   };
   const resp = await callAPI("/dungeon/complete", "POST", body);
   if (resp.error) {
@@ -529,7 +570,7 @@ function createDungeonCard(dungeon) {
   if (!dungeon.id) return "Dungeon non valido";
   let encountersHTML = "";
   if (dungeon.encounters && dungeon.encounters.length > 0) {
-    dungeon.encounters.forEach(enc => {
+    dungeon.encounters.forEach((enc) => {
       if (enc.nemico && enc.nemico.nome) {
         encountersHTML += `<li>${enc.tipo === "boss" ? "Boss Principale" : "Miniboss"}: ${enc.nemico.nome}</li>`;
       }
@@ -563,7 +604,7 @@ function buildInventoryHtml(items) {
 
   // Raggruppa gli item per 'type'
   const grouped = {};
-  items.forEach(item => {
+  items.forEach((item) => {
     const t = item.type || "Sconosciuto";
     if (!grouped[t]) {
       grouped[t] = [];
@@ -582,7 +623,7 @@ function buildInventoryHtml(items) {
     // Colora il titolo della sezione
     html += `<summary style="color: ${color}; font-weight: bold;">${type} (${grouped[type].length})</summary>`;
     html += `<ul style="list-style:none; padding-left:1em;">`;
-    grouped[type].forEach(obj => {
+    grouped[type].forEach((obj) => {
       const name = obj.name || "Senza Nome";
       const grade = obj.grade || "?";
       const desc = obj.description || "";
@@ -603,14 +644,11 @@ function buildInventoryHtml(items) {
   return html;
 }
 
-
 const gradeColors = {
-  "E": "#888",    // grigio
-  "D": "orange",    // blu
-  "C": "#0a0",    // verde
-  "B": "#ff0",    // giallo
-  "A": "#f80",    // arancione
-  "S": "#f00"     // rosso
+  E: "#888", // grigio
+  D: "orange", // blu
+  C: "#0a0", // verde
+  B: "#ff0", // giallo
+  A: "#f80", // arancione
+  S: "#f00", // rosso
 };
-
-
