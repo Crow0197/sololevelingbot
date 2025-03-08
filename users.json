@@ -173,38 +173,6 @@
                 "ability": "Benedizione Minore"
             },
             {
-                "name": "Talismano della Vita",
-                "type": "Oggetto Magico",
-                "grade": "E",
-                "description": "Un piccolo amuleto che irradia energia vitale.",
-                "effect": "Rigenera 50 HP ogni turno.",
-                "ability": "Benedizione Minore"
-            },
-            {
-                "name": "Talismano della Vita",
-                "type": "Oggetto Magico",
-                "grade": "E",
-                "description": "Un piccolo amuleto che irradia energia vitale.",
-                "effect": "Rigenera 50 HP ogni turno.",
-                "ability": "Benedizione Minore"
-            },
-            {
-                "name": "Spada d'Ombra",
-                "type": "Arma",
-                "grade": "D",
-                "description": "Una spada forgiata nelle tenebre.",
-                "effect": "Aumenta i danni contro i nemici notturni.",
-                "ability": "Colpo d'Ombra"
-            },
-            {
-                "name": "Spada d'Ombra",
-                "type": "Arma",
-                "grade": "D",
-                "description": "Una spada forgiata nelle tenebre.",
-                "effect": "Aumenta i danni contro i nemici notturni.",
-                "ability": "Colpo d'Ombra"
-            },
-            {
                 "name": "Spada d'Ombra",
                 "type": "Arma",
                 "grade": "D",
@@ -379,14 +347,6 @@
                 "description": "Una spada forgiata nelle tenebre.",
                 "effect": "Aumenta i danni contro i nemici notturni.",
                 "ability": "Colpo d'Ombra"
-            },
-            {
-                "name": "Armatura Runica",
-                "type": "Armatura",
-                "grade": "B",
-                "description": "Armatura incisa con rune arcane.",
-                "effect": "Riduce i danni magici del 15%.",
-                "ability": "Scudo Arcano"
             },
             {
                 "name": "Armatura Runica",
@@ -502,6 +462,6 @@
             }
         ],
         "dungeons_completed": 31,
-        "money": 74260
+        "money": 74760
     }
 }

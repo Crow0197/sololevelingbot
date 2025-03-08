@@ -31,6 +31,15 @@ GRADE_TOTAL = {
     "Leggendario": 4000
 }
 
+SALE_VALUES = {
+    "E": 50,
+    "D": 100,
+    "C": 150,
+    "B": 200,
+    "A": 300,
+    "S": 500
+}
+
 # -------------------- UTENTI --------------------
 
 def load_users():
@@ -689,3 +698,60 @@ def update_user_grade(user_id):
         return new_grade
     return None
 
+def sell_item(user_id, item_index):
+    """
+    Rimuove l'oggetto dall'inventario dell'utente (basato sull'indice) e incrementa i soldi in base al valore di vendita.
+    """
+    users = load_users()
+    if user_id not in users:
+        return "Utente non registrato."
+    
+    user = users[user_id]
+    inventory = user.get("inventory", [])
+    if not isinstance(inventory, list):
+        inventory = []
+    if item_index < 0 or item_index >= len(inventory):
+        return "Indice dell'oggetto non valido."
+    
+    # Rimuove l'oggetto dall'inventario
+    item = inventory.pop(item_index)
+    grade = item.get("grade", "E")
+    sale_value = SALE_VALUES.get(grade, 50)
+    # Incrementa i soldi dell'utente
+    user["money"] = user.get("money", 0) + sale_value
+    save_users(users)
+    return f"Oggetto '{item.get('name', 'Sconosciuto')}' venduto per {sale_value} soldi."
+
+def sell_item_by_name(user_id, item_name):
+    """
+    Vende un oggetto dall'inventario dell'utente cercando per nome.
+    Se ci sono più oggetti con lo stesso nome, elimina quello con il grado più basso.
+    Incrementa i soldi dell'utente in base al valore dell'oggetto.
+    """
+    # Converte user_id in stringa, dato che nel JSON è salvato come stringa
+    user_id = str(user_id)
+    users = load_users()
+    if user_id not in users:
+        return "Utente non registrato."
+    
+    user = users[user_id]
+    inventory = user.get("inventory", [])
+    if not inventory:
+        return "Inventario vuoto."
+    
+    matching_items = [item for item in inventory if item.get("name", "").lower() == item_name.lower()]
+    if not matching_items:
+        return "Oggetto non trovato."
+    
+    grade_order = {"E": 0, "D": 1, "C": 2, "B": 3, "A": 4, "S": 5}
+    selected = min(matching_items, key=lambda x: grade_order.get(x.get("grade", "E"), 0))
+    sale_value = SALE_VALUES.get(selected.get("grade", "E"), 50)
+    
+    for idx, item in enumerate(inventory):
+        if item.get("name", "").lower() == item_name.lower() and item.get("grade") == selected.get("grade"):
+            del inventory[idx]
+            break
+    
+    user["money"] = user.get("money", 0) + sale_value
+    save_users(users)
+    return f"Oggetto '{selected.get('name', 'Sconosciuto')}' venduto per {sale_value} soldi."

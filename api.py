@@ -15,9 +15,13 @@ from funzioni_solo_leveling import (
     calculate_level,
     exp_for_next_level,
     calculate_rank,
-    exp_for_next_rank
+    exp_for_next_rank,
+    sell_item,
+    sell_item_by_name
 
 )
+from pydantic import BaseModel
+
 import re
 
 app = FastAPI(title="Solo Leveling Bot API")
@@ -161,3 +165,28 @@ def api_get_profile_html(username: str):
         raise HTTPException(status_code=404, detail="Utente non trovato")
     profile_html = get_user_profile_html(user_id)
     return {"profile_html": profile_html}
+
+
+class SellItem(BaseModel):
+    user_id: int
+    item_name: str
+
+@app.post("/sell", summary="Vendi un oggetto dall'inventario")
+def api_sell_item(data: SellItem):
+    print("data", data)
+    result = sell_item_by_name(data.user_id, data.item_name)
+    if result.startswith("Oggetto"):
+        return {"message": result}
+    else:
+        raise HTTPException(status_code=400, detail=result)
+
+
+@app.get("/inventory/{user_id}", summary="Recupera l'inventario dell'utente")
+def api_get_inventory(user_id: str):
+    users = load_users()
+    user_key = str(user_id)
+    if user_key not in users:
+        raise HTTPException(status_code=404, detail="Utente non trovato")
+    inventory = users[user_key].get("inventory", [])
+    return {"inventory": inventory}
+
